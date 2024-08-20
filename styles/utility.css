@@ -33,25 +33,33 @@
     display: flex;
 }
 
+.items-center {
+    align-items: center;
+}
+
 .gap-1 {
     gap: 1rem;
+}
+
+.gap-1\.5 {
+    gap: 1.5rem;
 }
 
 .grid {
     display: grid;
 }
 
-@media (width >= 80em) {
+@media (width >=80em) {
     .container {
         --max-width: 80rem;
     }
-}
 
-.desktop-only {
-    display: initial;
-}
+    .desktop-only {
+        display: initial;
+    }
 
-.even-columns {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
